@@ -5,25 +5,20 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>goit-js-hw-11</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,700;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <h1>Image Search Gallery</h1>
+   <body>
+    <form class="search-form">
+        <input type="text" class="search-input" placeholder="Enter your search query">
+        <button class="form-btn" type="submit">Search</button>
+    </form>
+<div class="loader"></div>
+    <div class="gallery"></div>
 
-      <form id="search-form">
-        <input
-          type="text"
-          id="search-input"
-          placeholder="Enter search keyword"
-        />
-        <button type="submit">Search</button>
-      </form>
-    </header>
-
-    <main>
-      <div id="gallery" class="gallery"></div>
-    </main>
     <script type="module" src="./main.js"></script>
   </body>
 </html>
